@@ -5,21 +5,21 @@
 class KafkaTui < Formula
   desc "k9s-style terminal UI to browse, manage, and configure Apache Kafka"
   homepage "https://github.com/aleksey925/kafka-tui"
-  version "0.9.0"
+  version "0.10.0"
   license "MIT"
 
   on_macos do
     if Hardware::CPU.intel?
-      url "https://github.com/aleksey925/kafka-tui/releases/download/v0.9.0/kafka-tui_0.9.0_darwin_amd64.tar.gz"
-      sha256 "ba272c877150652ee78208aeebf5c3c729214673dadac0bec3ba79832d071f06"
+      url "https://github.com/aleksey925/kafka-tui/releases/download/v0.10.0/kafka-tui_0.10.0_darwin_amd64.tar.gz"
+      sha256 "f5756178b40087c51ce91b74bd6a5ccfa8bd2de3fc6dcf875dc3c26b1050b8a8"
 
       def install
         bin.install "kafka-tui"
       end
     end
     if Hardware::CPU.arm?
-      url "https://github.com/aleksey925/kafka-tui/releases/download/v0.9.0/kafka-tui_0.9.0_darwin_arm64.tar.gz"
-      sha256 "0fa5cd04ba72d836caf8fa43e95cf628d7de1b4f2d1864b297a72ab9cac48f6f"
+      url "https://github.com/aleksey925/kafka-tui/releases/download/v0.10.0/kafka-tui_0.10.0_darwin_arm64.tar.gz"
+      sha256 "32df1258e8c821b7455d2b3766b224a244aa46734683b32a7c356d17d3b30366"
 
       def install
         bin.install "kafka-tui"
@@ -29,15 +29,15 @@ class KafkaTui < Formula
 
   on_linux do
     if Hardware::CPU.intel? && Hardware::CPU.is_64_bit?
-      url "https://github.com/aleksey925/kafka-tui/releases/download/v0.9.0/kafka-tui_0.9.0_linux_amd64.tar.gz"
-      sha256 "60d3011c238ebdc9bacd2bfe89f602b40e250d9466df08adb71cb6aa98490ab7"
+      url "https://github.com/aleksey925/kafka-tui/releases/download/v0.10.0/kafka-tui_0.10.0_linux_amd64.tar.gz"
+      sha256 "8040c212a4e3bdf82dc71dd70f571b764943537c06702fb270bd7e3608bfa52b"
       def install
         bin.install "kafka-tui"
       end
     end
     if Hardware::CPU.arm? && Hardware::CPU.is_64_bit?
-      url "https://github.com/aleksey925/kafka-tui/releases/download/v0.9.0/kafka-tui_0.9.0_linux_arm64.tar.gz"
-      sha256 "302803859522f675b7c9f0872d37c4c0c29dc5911d477a5f88f9a16b9df59609"
+      url "https://github.com/aleksey925/kafka-tui/releases/download/v0.10.0/kafka-tui_0.10.0_linux_arm64.tar.gz"
+      sha256 "b3f18ef672e48474ffe0b712bf7111a76114c6fe27c3ef222cbe3c993b212d91"
       def install
         bin.install "kafka-tui"
       end
