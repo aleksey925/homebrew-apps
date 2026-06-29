@@ -1,13 +1,13 @@
 cask "meerkat" do
-  version "0.2.0-dev1"
-  sha256 "3ef8ac701aee36bb10ab355d765af699eceb2bf5dbf407add7905d579a6f0d73"
+  version "0.2.0"
+  sha256 "703d6d15c2643bc31ef8ef60d86733b6a02509bbbf629da42dbe9a3f9924d669"
 
   url "https://github.com/aleksey925/meerkat/releases/download/v#{version}/Meerkat_#{version}_aarch64.dmg"
   name "Meerkat"
   desc "macOS menubar app for tracking GitLab merge requests"
   homepage "https://github.com/aleksey925/meerkat"
 
-  depends_on macos: ">= :big_sur"
+  depends_on macos: :big_sur
   depends_on arch: :arm64
 
   app "Meerkat.app"
