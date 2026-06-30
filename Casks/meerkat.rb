@@ -1,6 +1,6 @@
 cask "meerkat" do
-  version "0.2.0"
-  sha256 "703d6d15c2643bc31ef8ef60d86733b6a02509bbbf629da42dbe9a3f9924d669"
+  version "0.3.0"
+  sha256 "b953aecf89a618606b43547b6be1ae924427baca4eeb1b8f8980e3348a43f05f"
 
   url "https://github.com/aleksey925/meerkat/releases/download/v#{version}/Meerkat_#{version}_aarch64.dmg"
   name "Meerkat"
@@ -20,6 +20,7 @@ cask "meerkat" do
 
   zap trash: [
     "~/Library/Application Support/com.meerkat.app",
+    "~/Library/LaunchAgents/Meerkat.plist",
     "~/Library/Preferences/com.meerkat.app.plist",
     "~/Library/Saved Application State/com.meerkat.app.savedState",
   ]
