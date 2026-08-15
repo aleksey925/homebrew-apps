@@ -5,21 +5,21 @@
 class Agentbox < Formula
   desc "CLI for running AI agents inside an isolated Docker container"
   homepage "https://github.com/aleksey925/agentbox"
-  version "0.13.0"
+  version "0.14.0"
   license "MIT"
 
   on_macos do
     if Hardware::CPU.intel?
-      url "https://github.com/aleksey925/agentbox/releases/download/v0.13.0/agentbox_0.13.0_darwin_amd64.tar.gz"
-      sha256 "5721c8f6c5897eb5a6625aed7cade8dc95672b3e13e086d89249f2895867e2e7"
+      url "https://github.com/aleksey925/agentbox/releases/download/v0.14.0/agentbox_0.14.0_darwin_amd64.tar.gz"
+      sha256 "d1c6c15bc91bcdfeaff713166b63d5402a2f22031b7711191b8295931a473bb0"
 
       def install
         bin.install "agentbox"
       end
     end
     if Hardware::CPU.arm?
-      url "https://github.com/aleksey925/agentbox/releases/download/v0.13.0/agentbox_0.13.0_darwin_arm64.tar.gz"
-      sha256 "1db8b3801c9e7d9a34d7867fb58c48316a804a508c0abcdfeb6cd380d25474b6"
+      url "https://github.com/aleksey925/agentbox/releases/download/v0.14.0/agentbox_0.14.0_darwin_arm64.tar.gz"
+      sha256 "01c4e731047af0ce057f74b258ac9d69b62936a8deca3bfaa65592a1e3e014bd"
 
       def install
         bin.install "agentbox"
@@ -29,15 +29,15 @@ class Agentbox < Formula
 
   on_linux do
     if Hardware::CPU.intel? && Hardware::CPU.is_64_bit?
-      url "https://github.com/aleksey925/agentbox/releases/download/v0.13.0/agentbox_0.13.0_linux_amd64.tar.gz"
-      sha256 "2782d60e963d6269013d3a86c309b8cd24c9a119b644344b77b949eca4cc05dd"
+      url "https://github.com/aleksey925/agentbox/releases/download/v0.14.0/agentbox_0.14.0_linux_amd64.tar.gz"
+      sha256 "12e5e96f78efbd0985e4f23155c0d5d9ba3eb866db9872adabf2aa6e85d3751e"
       def install
         bin.install "agentbox"
       end
     end
     if Hardware::CPU.arm? && Hardware::CPU.is_64_bit?
-      url "https://github.com/aleksey925/agentbox/releases/download/v0.13.0/agentbox_0.13.0_linux_arm64.tar.gz"
-      sha256 "c71707fa9db1ed8781d1dea39023081190bbbbef5475aa752ce9f151c969932b"
+      url "https://github.com/aleksey925/agentbox/releases/download/v0.14.0/agentbox_0.14.0_linux_arm64.tar.gz"
+      sha256 "1c5081bbb6047b7fd735d1dc6f4f22549270b6ec74f0d4b6f71d6a5323bb5be3"
       def install
         bin.install "agentbox"
       end
