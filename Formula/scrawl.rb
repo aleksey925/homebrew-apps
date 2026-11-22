@@ -5,21 +5,21 @@
 class Scrawl < Formula
   desc "Markdown notes in any browser, from a folder or a git repository"
   homepage "https://github.com/aleksey925/scrawl"
-  version "0.7.0"
+  version "0.8.0"
   license "MIT"
 
   on_macos do
     if Hardware::CPU.intel?
-      url "https://github.com/aleksey925/scrawl/releases/download/v0.7.0/scrawl_0.7.0_darwin_amd64.tar.gz"
-      sha256 "ec396d0a315a164cfb7c763c0ac50a40128decf2752952ac1b21d4f3a5783dad"
+      url "https://github.com/aleksey925/scrawl/releases/download/v0.8.0/scrawl_0.8.0_darwin_amd64.tar.gz"
+      sha256 "c8334801de856d7d8e6d70e129b4df5572ea7a23e029c12ccaf840188f102965"
 
       def install
         bin.install "scrawl"
       end
     end
     if Hardware::CPU.arm?
-      url "https://github.com/aleksey925/scrawl/releases/download/v0.7.0/scrawl_0.7.0_darwin_arm64.tar.gz"
-      sha256 "bf2bb311b7e891906d32d24493bda6276f17cef2806f93fb58a7f56becff3a59"
+      url "https://github.com/aleksey925/scrawl/releases/download/v0.8.0/scrawl_0.8.0_darwin_arm64.tar.gz"
+      sha256 "f71f6dd354e84d540e018f6f8187407040c81664265aaa9290f4ff2fd71d1a7a"
 
       def install
         bin.install "scrawl"
@@ -29,15 +29,15 @@ class Scrawl < Formula
 
   on_linux do
     if Hardware::CPU.intel? && Hardware::CPU.is_64_bit?
-      url "https://github.com/aleksey925/scrawl/releases/download/v0.7.0/scrawl_0.7.0_linux_amd64.tar.gz"
-      sha256 "94be442e3be3b2692b78a97b7d2b68ac35f5e33d4dddcda55750d5c4bc77e32d"
+      url "https://github.com/aleksey925/scrawl/releases/download/v0.8.0/scrawl_0.8.0_linux_amd64.tar.gz"
+      sha256 "70771d98743a885473fd612def1778ec8dc446cd0f99307207f58f29fc393427"
       def install
         bin.install "scrawl"
       end
     end
     if Hardware::CPU.arm? && Hardware::CPU.is_64_bit?
-      url "https://github.com/aleksey925/scrawl/releases/download/v0.7.0/scrawl_0.7.0_linux_arm64.tar.gz"
-      sha256 "0c1d072a66564bfcce86193feeaf6839f1ccd54cd0d13b8ff4f5cba22660e65e"
+      url "https://github.com/aleksey925/scrawl/releases/download/v0.8.0/scrawl_0.8.0_linux_arm64.tar.gz"
+      sha256 "82a36b1cf20931308cb6e6ecb9e4ab21b74199297a274d91541ac340807402a3"
       def install
         bin.install "scrawl"
       end
